@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FanTheories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FanTheories</h1>
+  <section class="about-site">
+  <h2>À propos du projet</h2>
+    <p>
+      FanTheories est une plateforme dédiée aux théories et analyses des univers vidéoludiques.
+      Le site permet aux visiteurs d'explorer différentes interprétations de scénarios, de personnages et d'événements issus de jeux populaires.
+    </p>
+  </section>
+
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Rechercher un jeu..." onkeyup="showSuggestions()" onkeydown="handleKey(event)">
+
+      <button onclick="searchSite()">🔍</button>
+      <div id="suggestions"></div>
+    </div>
+  </header>
+  <main class="content">
+    <button id="backButton" onclick="goBack()">
+        ← Retour à l'accueil
+    </button>
+  <div id="gameContent">
+    <h2>Bienvenue sur FanTheories</h2>
+    <p>
+      Découvrez les théories les plus populaires autour des jeux vidéo.
+Explorez les mystères, les personnages et les secrets cachés imaginés par les communautés de joueurs.
+    </p>
+  </div>
+
+  <h2 class="library_h2">
+    Bibliothèque des jeux
+  </h2>
+
+  <div class="library">
+    <div class="game_card" onclick="openGame('minecraft')">
+      <img src="image/Minecraft.avif">
+      <h3>Minecraft</h3>
+    </div>
+    <div class="game_card" onclick="openGame('poppy playtime')">
+      <img src="image/Poppy Playtime.jpg">
+      <h3>Poppy Playtime</h3>
+    </div>
+    <div class="game_card" onclick="openGame('cyberpunk 2077')">
+      <img src="image/Cyberpunk.jpg">
+      <h3>Cyberpunk 2077</h3>
+    </div>
+    <div class="game_card" onclick="openGame('undertale')">
+      <img src="image/Undertale.jpg">
+      <h3>Undertale</h3>
+    </div>
+    <div class="game_card" onclick="openGame('fnaf')">
+      <img src="image/Fnaf.avif">
+      <h3>Five Nights At Freddy's</h3>
+    </div>
+  </div>
+</main>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>© 2026 Mark Vlasov — Projet personnel développé avec HTML, CSS et JavaScript.</p>
+  </footer>
+
+</body>
+</html>
